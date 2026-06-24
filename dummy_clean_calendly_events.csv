@@ -1,0 +1,11 @@
+name,status,location_type,location_value,invitees_active,invitees_total,start_time_ts,end_time_ts,created_at_ts,uri
+AI Portfolio Review,active,outbound_call,+1 555-0100,1,1,5/13/26 11:30,5/13/26 12:00,5/12/26 11:30,https://api.calendly.com/scheduled_events/demo-event-1
+Client Strategy Session,completed,outbound_call,+1 555-0101,1,1,5/14/26 08:30,5/14/26 09:00,5/13/26 08:30,https://api.calendly.com/scheduled_events/demo-event-2
+ML Model Demo,active,outbound_call,+1 555-0102,1,1,5/15/26 09:30,5/15/26 10:00,5/14/26 09:30,https://api.calendly.com/scheduled_events/demo-event-3
+AWS Architecture Meeting,completed,outbound_call,+1 555-0103,1,1,5/16/26 11:30,5/16/26 12:00,5/15/26 11:30,https://api.calendly.com/scheduled_events/demo-event-4
+Data Engineering Sync,active,outbound_call,+1 555-0104,1,1,5/17/26 08:30,5/17/26 09:00,5/16/26 08:30,https://api.calendly.com/scheduled_events/demo-event-5
+Insurance Analytics Review,active,outbound_call,+1 555-0105,1,1,5/18/26 10:30,5/18/26 11:00,5/17/26 10:30,https://api.calendly.com/scheduled_events/demo-event-6
+PySpark Training Session,active,outbound_call,+1 555-0106,1,1,5/19/26 10:30,5/19/26 11:00,5/18/26 10:30,https://api.calendly.com/scheduled_events/demo-event-7
+ETL Pipeline Walkthrough,active,outbound_call,+1 555-0107,1,1,5/20/26 08:30,5/20/26 09:00,5/19/26 08:30,https://api.calendly.com/scheduled_events/demo-event-8
+Cloud Migration Planning,completed,outbound_call,+1 555-0108,1,1,5/21/26 11:30,5/21/26 12:00,5/20/26 11:30,https://api.calendly.com/scheduled_events/demo-event-9
+AI Product Brainstorm,active,outbound_call,+1 555-0109,1,1,5/22/26 11:30,5/22/26 12:00,5/21/26 11:30,https://api.calendly.com/scheduled_events/demo-event-10

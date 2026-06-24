@@ -1,0 +1,33 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Environment variables / secrets
+.env
+
+# Airflow
+logs/
+airflow.db
+airflow.cfg
+webserver_config.py
+standalone_admin_password.txt
+
+# Data files
+data/*.csv
+
+# Mac system files
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+# Virtual environments
+venv*/
+venv311/
+
+# Local pipeline data outputs
+data/
