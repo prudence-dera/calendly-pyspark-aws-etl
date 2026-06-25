@@ -20,12 +20,12 @@ default_args = {
 
 with DAG(
     dag_id="calendly_pyspark_aws_etl",
-    description="Scheduled Calendly ETL pipeline using Python, PySpark, and AWS-ready outputs",
+    description="Scheduled Calendly ETL pipeline using Python, PySpark, AWS S3, and Airflow",
     default_args=default_args,
     start_date=pendulum.datetime(2026, 6, 24, tz="America/Chicago"),
     schedule="@daily",
     catchup=False,
-    tags=["calendly", "pyspark", "aws", "etl"],
+    tags=["calendly", "pyspark", "aws", "s3", "etl"],
 ) as dag:
 
     fetch_calendly_events = BashOperator(
@@ -43,4 +43,9 @@ with DAG(
         bash_command=f"test -s {PROJECT_DIR}/data/clean_calendly_events.csv",
     )
 
-    fetch_calendly_events >> transform_with_pyspark >> validate_clean_file
+    upload_clean_to_s3 = BashOperator(
+        task_id="upload_clean_to_s3",
+        bash_command=f"cd {PROJECT_DIR} && {PYTHON_BIN} src/upload_clean_to_s3.py",
+    )
+
+    fetch_calendly_events >> transform_with_pyspark >> validate_clean_file >> upload_clean_to_s3
