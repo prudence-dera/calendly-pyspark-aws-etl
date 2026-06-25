@@ -46,3 +46,8 @@ webserver_config.py
 airflow.db*
 *.db-shm
 *.db-wal
+
+# Airflow SQLite runtime files
+airflow.db*
+*.db-shm
+*.db-wal
