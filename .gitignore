@@ -31,3 +31,13 @@ venv311/
 
 # Local pipeline data outputs
 data/
+
+# Airflow local runtime files
+airflow.db
+airflow.cfg
+logs/
+plugins/
+simple_auth_manager_passwords.json.generated
+standalone_admin_password.txt
+webserver_config.py
+*.pid
