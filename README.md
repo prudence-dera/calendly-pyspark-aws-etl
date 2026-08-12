@@ -154,3 +154,21 @@ Trigger the DAG:
 ## Notes
 
 Sensitive files such as AWS credentials, Airflow database files, logs, virtual environments, and local configuration files should not be committed to GitHub.
+
+
+## Cloud Deployment Plan
+
+The current project is cloud-integrated. Airflow currently runs locally on my MacBook, while the cleaned data is stored in Amazon S3 and queried through Amazon Athena.
+
+The next deployment phase is to move orchestration into AWS. The preferred option is Amazon MWAA because the project already uses Apache Airflow locally.
+
+Planned cloud deployment steps:
+
+- Move the Airflow DAG to an S3 DAG folder.
+- Upload the project `requirements.txt` file for MWAA dependencies.
+- Create an MWAA execution role with access to S3, CloudWatch, Glue, and Athena.
+- Move local secrets and API tokens into AWS Secrets Manager or Airflow Variables.
+- Test the DAG in MWAA.
+- Monitor workflow runs through the MWAA Airflow UI and CloudWatch logs.
+
+Alternative deployment options include EC2, ECS/Fargate, or Lambda/EventBridge depending on cost, complexity, and whether the PySpark step remains part of the pipeline.
