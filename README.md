@@ -301,6 +301,8 @@ The processed Parquet dataset was registered in the `calendly_etl_db` database, 
 Amazon Athena successfully queried the processed dataset through the AWS Glue Data Catalog, validating the end-to-end cloud ETL pipeline. The test query completed in 373 ms and scanned 0.56 KB of data.
 
 ## Repository Structure
+
+```text
 calendly-pyspark-aws-project/
 │
 ├── README.md
@@ -324,6 +326,7 @@ calendly-pyspark-aws-project/
         ├── 04-glue-crawler-success.png
         ├── 05-glue-data-catalog.png
         └── 06-athena-query-success.png
+        ```
 
 
 ---
