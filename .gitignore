@@ -51,3 +51,5 @@ airflow.db*
 airflow.db*
 *.db-shm
 *.db-wal
+.env
+README-backup.md
