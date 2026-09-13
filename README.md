@@ -324,9 +324,7 @@ calendly-pyspark-aws-project/
         ├── 04-glue-crawler-success.png
         ├── 05-glue-data-catalog.png
         └── 06-athena-query-success.png
-│
-└── README-backup.md
-```
+
 
 ---
 
