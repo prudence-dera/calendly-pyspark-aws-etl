@@ -1,3 +1,6 @@
+<img width="1382" height="412" alt="image" src="https://github.com/user-attachments/assets/f502111b-7951-471c-97f2-2536090a4669" />
+
+
 # Calendly PySpark AWS ETL Pipeline
 
 ## Project Overview
